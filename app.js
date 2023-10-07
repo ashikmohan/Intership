@@ -13,7 +13,7 @@ const api= require('./routes/route');
 app.use('/ticket-booking',api);
 
 const db=require('./db/connection');
-require('dotenv').config();
+
 
 const path =require('path');
 app.use(express.static('./Backend/frontend'));
