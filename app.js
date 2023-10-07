@@ -16,6 +16,7 @@ const db=require('./db/connection');
 require('dotenv').config();
 
 const path =require('path');
+app.use(express.static('./Backend/frontend'));
 
 app.use(express.static(path.join(__dirname,'frontend')))
 
